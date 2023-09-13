@@ -26,8 +26,8 @@ function Login() {
         console.log(res);
         localStorage.setItem("user_id", res?.data?.user_id);
         setTimeout(() => {
-          navigate("/dashboard");
-        }, 1000);
+          navigate("/dashboard", { replace: true });
+        }, 2000);
       })
       .catch((err) => {
         console.log(err);
@@ -50,7 +50,7 @@ function Login() {
           <label htmlFor="password">Password</label>
           <input
             type="password"
-            placeholder="Enter your first name"
+            placeholder="Enter your password"
             name="password"
             id="password"
           />

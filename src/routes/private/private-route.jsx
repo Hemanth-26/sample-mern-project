@@ -1,10 +1,11 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
 
 function PrivateRoute(Component) {
-  const id = !!localStorage.getItem("user_id");
+  // const id = !!localStorage.getItem("user_id");
 
-  return id ? <Component /> : <Navigate to="/login" />;
+  // return id ? <Component /> : <Navigate to="/login" />;
+  return <Component />
 }
 
 export default PrivateRoute;

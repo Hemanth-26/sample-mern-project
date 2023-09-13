@@ -70,7 +70,7 @@ function Register() {
           <label htmlFor="password">Password</label>
           <input
             type="password"
-            placeholder="Enter your first name"
+            placeholder="Enter your password"
             id="password"
             name="password"
           />
